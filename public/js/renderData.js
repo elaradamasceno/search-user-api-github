@@ -72,7 +72,7 @@ function renderRepository(responseDataRepo){
         divRepo.setAttribute('class', 'divRepo'); 
 
         let anchorRepo = document.createElement('a');
-        anchorRepo.setAttribute('href', 'repository.html'); 
+        anchorRepo.setAttribute('href', 'repo/repository.html'); 
         anchorRepo.setAttribute('class', 'linkDataRepo');
         anchorRepo.setAttribute('id', i.id);
 
