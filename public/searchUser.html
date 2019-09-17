@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Busca de usuário Git</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' href='css/searchUser.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <h1>Buscar por Usuário do GitHub</h1>
+        </div>
+        <div id="divSearch">
+            <i class="material-icons" id="iconSearch">search</i>
+            <input type="text" id="inputSearch" placeholder="Buscar..."/>
+            <button id="buttonSearch" onclick="searchUser()">Buscar</button>
+            <span id="validateInput">Esse campo é obrigatório.</span>
+        </div>     
+        <div id="divResultSearch">
+            <div id="imgUser">
+                <img id="img" src="">
+            </div>
+            <div id="dataUser">
+                <span id="repository"></span>
+                <span id="followers"></span>
+                <span id="following"></span>
+            </div>
+            <div id="descriptionUser">
+                <span id="nameUser"></span></br>
+                <span id="email"></span></br>
+                <span id="biography"></span>
+            </div>
+            <div id="dataRepository">
+                <div id="initRepo"></div>
+                <a href="#" id= "orderRepository" onclick="orderRepository()"><i class="material-icons">call_received</i></a>
+            </div>
+        </div>
+        <div id="containerError">
+            <span id="textError"></span>
+        </div>
+    </div>
+</body>
+<script src="js/renderData.js"></script>
+<script src="js/request.js"></script>
+</html>
